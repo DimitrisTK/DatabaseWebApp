@@ -1,0 +1,192 @@
+<!--
+    Document   : submitform.html
+    Created on : May, 2017
+    Author     : Kourias Triantafyllos Dimitris cs141092
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Submit Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Functions.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/subform.css">
+    </head>
+    
+    <body>
+        <form action="submit.jsp">    
+            The underlined fields are required.<p>
+            
+            <label><u>Surname</u></label><br>
+              <input type="text" placeholder="Surname"  required name="surname"> <p>
+
+            <label><u>First Name</u></label><br>
+              <input type="text" placeholder="First Name"  required name="firstname"><p>
+                
+                                
+            <label><u>Date of Birth</u></label><br>
+              <input type="number" name="daybirth" placeholder="Day" required min="1" max="31" value="">
+              <input type="number" name="monthbirth" placeholder="Month" required min="1" max="12" value="">
+              <input type="number" name="yearbirth" placeholder="Year" required min="1899" max="2000" value=""><p>
+             
+                  
+            <label><u>Curriculum Vitae</u></label><br>
+              <input id='cvres' type="text" placeholder="Curriculum Vitae"  required name="cvresume"><p>
+             
+             
+            <label><u>Institute</u></label>
+             <select name="institute"> 
+                <option value="0"></option>
+                <option value="1">ΑΤΕΙ Αθήνας</option>
+                <option value="2">ΑΤΕΙ Ανατολικής Μακεδονίας και Θράκης</option>
+                <option value="3">ΑΤΕΙ Δυτικής Ελλάδας</option>
+                <option value="4">ΑΤΕΙ Δυτικής Μακεδονίας</option>
+                <option value="5">ΑΤΕΙ Ηπείρου</option>
+                <option value="6">ΑΤΕΙ Θεσσαλίας</option>
+                <option value="7">ΑΤΕΙ Θεσσαλονίκης</option>
+                <option value="8">ΑΤΕΙ Ιονίων Νήσων</option>
+                <option value="9">ΑΤΕΙ Κεντρικής Μακεδονίας</option>
+                <option value="10">ΑΤΕΙ Κρήτης</option>
+                <option value="11">ΑΤΕΙ Πειραιά</option>
+                <option value="12">ΑΤΕΙ Πελοποννήσου</option>
+                <option value="13">ΑΤΕΙ Στερεάς Ελλάδας</option>
+             </select>
+                
+            
+            <label>Faculty</label>
+             <select name="faculty"> 
+                <option value="0"></option>
+                <option value="10">Τεχνολογικών Εφαρμογών</option>
+                <option value="20">Διοίκησης & Οικονομίας</option>
+                <option value="30">Επαγγελμάτων Υγείας & Πρόνοιας</option>
+                <option value="40">Τεχνολογίας Τροφίμων & Διατροφης</option>
+                <option value="50">Καλλιτεχνικών Σπουδών</option>
+                <option value="60">Τεχνολογιών Γεωπονίας</option>
+                <option value="70">Μουσικής Τεχνολογίας</option>
+                <option value="80">Εφαρμοσμένων Επιστημών</option>
+             </select>
+        
+            <label>Department</label>
+              <input type="text" placeholder="Department" name="department"><p>
+        
+                
+            <div id="languagefields">
+                Foreign Language:
+                <select name="languages"> 
+                    <option value=""></option>
+                    <option value="1">English</option>
+                    <option value="2">French</option>
+                    <option value="3">German</option>
+                    <option value="4">Spanish</option>
+                    <option value="5">Italian</option>
+                    <option value="6">Chinese</option>
+                    <option value="7">Japanese</option>
+                    <option value="8">Russian</option>
+                    <option value="9">Turkish</option>
+                    <option value="10">Arabic</option>
+                </select>
+        
+                Level:
+                <select name="langlevels"> 
+                    <option value="0"></option>
+                    <option value="1">Elementary</option>
+                    <option value="2">Intermediate</option>
+                    <option value="3">Advanced</option>
+                    <option value="4">Proficient</option>
+                </select>
+                
+                <input type="button" value="Add another language" onClick="addanotherlanguage('languagefields');"> 
+             </div><p>
+                
+                 
+             <div id="newlanguagefields">
+                &emsp;<label>Didn't find your language?</label>
+                <input type="text" name="newlanguages" placeholder="Insert new language">
+                <label>Level</label>
+                <select name="newlvls"> 
+                <option value="0"></option>
+                <option value="1">Elementary</option>
+                <option value="2">Intermediate</option>
+                <option value="3">Advanced</option>
+                <option value="4">Proficient</option>
+                </select>
+                <input type="button" value="Add a missing language" onClick="addnewlang('newlanguagefields');">
+            </div>
+            <p>
+                
+                
+                
+            <div id="interestfields">
+                <label>Interests</label><br>
+                <select name="interests"> 
+                    <option value=""></option>
+                    <option value="1">Database</option>
+                    <option value="2">Web programming</option>
+                    <option value="3">Human Computer Interaction</option>
+                    <option value="4">Data Mining</option>
+                    <option value="5">Software Engineering</option>
+                    <option value="6">Information Retrieval</option>
+                    <option value="7">Software Quality</option>
+                    <option value="8">e-commerce</option>
+                    <option value="9">Management Information Systems</option>
+                    <option value="10">Information Systems</option>
+                </select><br>
+            </div>
+            <input type="button" value="Add another interest" onClick="addanotherinterest('interestfields');"><p>
+        
+                
+            <div id="hobbyfields">
+                <label>Hobbies</label><br>
+                <select name="hobbies"> 
+                    <option value=""></option>
+                    <option value="1">Football</option>
+                    <option value="2">Basketball</option>
+                    <option value="3">Volleyball</option>
+                    <option value="4">Tennis</option>
+                    <option value="5">Swimming</option>
+                    <option value="6">Art</option>
+                    <option value="7">Music</option>
+                    <option value="8">Martial Arts</option>
+                    <option value="9">Cinema</option>
+                    <option value="10">Photography</option>
+                </select> <br> 
+            </div>
+            <input type="button" value="Add another hobby" onClick="addanotherhobby('hobbyfields');"><p>
+                
+                
+            <div id="newhobbyfields">
+                &emsp; Didn't find your hobby?: <input type="text" name="newhobbies" placeholder="Insert new hobby">
+                <input type="button" value="Add a missing hobby" onClick="addnewhobby('newhobbyfields');">
+            </div><p>
+                
+                
+            <div id="quotefields">
+                <label>Quote</label><br>
+                <input type="text" name="quotes" placeholder="Insert your Quote">            
+            </div>
+            <input type="button" value="Add another quote" onClick="addanotherquote('quotefields');"><p>
+        
+     
+            <div id="photofields">
+                <label>Photo</label><br>
+                <input type="text" name="photos" placeholder="Insert link for photo">            
+            </div>
+            <input type="button" value="Add another photo" onClick="addanotherphoto('photofields');"><p>
+
+                
+            <div id="videofields">
+                <label>Video</label><br>
+                <input type="text" name="videos" placeholder="Insert link for video">            
+            </div>
+            <input type="button" value="Add another video" onClick="addanothervideo('videofields');"><p>
+            
+            
+            <button type="submit" >Submit form</button><p>
+            <input type="reset">
+            <a href="index4user.jsp">Return Back</a>
+            
+        </form>
+                          
+    </body>
+</html>

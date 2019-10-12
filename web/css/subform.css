@@ -1,0 +1,49 @@
+/* 
+    Created on : May, 2017
+    Author     : Kourias Triantafyllos Dimitris cs141092
+*/
+
+ body{
+    position:absolute; 
+    background-image:url("formwallpaper.jpg");
+    background-color: #ffffff;
+    background-size: cover;
+    z-index: -1;
+    color: black;
+}
+
+ #cvres{
+    width: 700px;
+    height: 100px;
+    resize: both;
+    overflow-y: SCROLL;
+ }
+ 
+
+
+tables {
+   margin-bottom: 2cm;
+}
+
+table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+  
+  
+  

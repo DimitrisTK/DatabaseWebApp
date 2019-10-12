@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/web-project/3">
+            <name>Kourias, Papoutsis Site (DB Project)</name>
+            <minimum-ant-version>1.6.5</minimum-ant-version>
+            <web-module-libraries>
+                <library dirs="200">
+                    <file>${file.reference.mysql-connector-java-5.1.42.zip}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.mysql-connector-java-5.1.42.zip}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${libs.MySQLDriver.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+            </web-module-libraries>
+            <web-module-additional-libraries/>
+            <source-roots>
+                <root id="src.dir" name="Source Packages"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.src.dir" name="Test Packages"/>
+            </test-roots>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>Birthdate</word>
+            <word>cs</word>
+            <word>CV</word>
+            <word>CVs</word>
+            <word>Didn</word>
+            <word>Dimitris</word>
+            <word>FirstName</word>
+            <word>html</word>
+            <word>Kourias</word>
+            <word>registerform</word>
+            <word>submitform</word>
+            <word>Triantafyllos</word>
+            <word>Αθήνας</word>
+            <word>Ανατολικής</word>
+            <word>ΑΤΕΙ</word>
+            <word>Γεωπονίας</word>
+            <word>Διατροφης</word>
+            <word>Διοίκησης</word>
+            <word>Δυτικής</word>
+            <word>Ελλάδας</word>
+            <word>Επαγγελμάτων</word>
+            <word>Επιστημών</word>
+            <word>Εφαρμογών</word>
+            <word>Εφαρμοσμένων</word>
+            <word>Ηπείρου</word>
+            <word>Θεσσαλίας</word>
+            <word>Θεσσαλονίκης</word>
+            <word>Θράκης</word>
+            <word>Ιονίων</word>
+            <word>και</word>
+            <word>Καλλιτεχνικών</word>
+            <word>Κεντρικής</word>
+            <word>Κρήτης</word>
+            <word>Μακεδονίας</word>
+            <word>Μουσικής</word>
+            <word>Νήσων</word>
+            <word>Οικονομίας</word>
+            <word>Πειραιά</word>
+            <word>Πελοποννήσου</word>
+            <word>Πρόνοιας</word>
+            <word>Σπουδών</word>
+            <word>Στερεάς</word>
+            <word>Τεχνολογίας</word>
+            <word>Τεχνολογικών</word>
+            <word>Τεχνολογιών</word>
+            <word>Τροφίμων</word>
+            <word>Υγείας</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>

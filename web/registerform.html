@@ -1,0 +1,45 @@
+<!--
+    Document   : registerform.html
+    Created on : May, 2017
+    Author     : Kourias Triantafyllos Dimitris cs141092
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Register Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index4user.css">
+</head>
+<body>
+
+    
+    <form name="register" method="post" action="register.jsp">
+        <h2>Register here. The underlined fields are required.</h2><p>
+
+        <label><b>Username</b></label><br>
+        <input type="text" name="username" required maxlength="30"><br>
+  
+        <label><b>Password</b></label><br>
+        <input type="password" name="password" required maxlength="30"><br>
+  
+        <label>Email</label><br>
+        <input type="email" name="email" maxlength="30"><br>
+  
+        <label>Sex</label><br>
+            <select name="sex"> 
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+ 
+        <input type="submit" value="Register"> <p>
+        <input type="reset"><p>
+ 
+        <h3><a href="index.html">Return Back</a></h3>
+    </form>
+</body>
+</html>
